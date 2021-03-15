@@ -1,4 +1,4 @@
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1279px){
     body{
         
         background-color: #8753BD;
@@ -62,7 +62,7 @@
     }
 } 
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1278px) {
     body{
     
         background-color: #8753BD;
@@ -85,9 +85,6 @@
         ;
        
     }
-    img {
-        width: 150%;
-    }
     .huis {
         min-height: 1vh;
     }
@@ -96,12 +93,45 @@
         min-height: 1vh;
         
     }
-    img {
-        width: 150%;
-        margin-top: 40px;
+    img{
+        width: 200%;
+        
+    }
+
+    button {
+        margin-top: 50px; 
+        padding: 30px; 
+        border-radius: 30px;
+        width: 186px;
+        height: 87px;
+        text-align: center;
     }
     #button {
         margin-top: -20px;
+    }
+    
+
+
+    .huis {
+        padding: 70px;
+        background-color: #360A6D;
+        color: white;
+        grid-area: huis;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-height: 40vh;
+    }
+
+    .security {
+        padding: 70px;
+        background-color: #360A6D;
+        color: white;
+        grid-area: sec;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-height: 40vh;
     }
 }
 
@@ -141,5 +171,36 @@
     }
     #button {
         margin-top: -60px;
+    }
+
+    button {
+        margin-top: 90px; 
+        padding: 30px; 
+        border-radius: 30px;
+        width: 186px;
+        height: 87px;
+        text-align: center;
+    }
+
+    .huis {
+        padding: 70px;
+        background-color: #360A6D;
+        color: white;
+        grid-area: huis;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-height: 1fr;
+    }
+
+    .security {
+        padding: 70px;
+        background-color: #360A6D;
+        color: white;
+        grid-area: sec;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-height: 1fr;
     }
 }
