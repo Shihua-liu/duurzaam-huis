@@ -1,42 +1,145 @@
-body{
-    background-color: #8753BD;
-    font-size: 20px;
-    grid-column: 1fr 1fr;
-    grid-row: 1fr;
-    font-family: 'Open Sans', sans-serif;
-}
+@media screen and (min-width: 1280px){
+    body{
+        
+        background-color: #8753BD;
+        font-size: 20px;
+        grid-column: 1fr 1fr;
+        grid-row: 1fr;
+        font-family: 'Open Sans', sans-serif;
+    }
 
-.main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    margin: 40px;
-}
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 40px;
+        margin: 40px;
+        
+        grid-template-areas: 
+        "huis sec"
+        ;
+    }
 
-.huis {
-    width: 200px;
-    margin: 10px;
-    padding: 5px;
-    background-color: #360A6D;
-    color: white;
-    min-width: 40%;
-    padding-top: 40%;
+
+    img{
+        width: 200%;
+        margin: 40px;
+        height: 363px;
+    }
+
+    button {
+        margin-top: 50px; 
+        padding: 30px; 
+        border-radius: 30px;
+        width: 186px;
+        height: 87px;
+        text-align: center;
+    }
+
+
+
+
+    .huis {
+        padding: 70px;
+        background-color: #360A6D;
+        color: white;
+        grid-area: huis;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-height: 75vh;
+    }
+
+    .security {
+        padding: 70px;
+        background-color: #360A6D;
+        color: white;
+        grid-area: sec;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-height: 75vh;
+    }
+} 
+
+@media screen and (max-width: 1279px) {
+    body{
     
+        background-color: #8753BD;
+        font-size: 20px;
+        grid-column: 1fr 1fr;
+        grid-row: 1fr;
+        font-family: 'Open Sans', sans-serif;
+    }
     
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 60px;
+        margin: 40px;
+        
+        grid-template-areas: 
+        "huis huis"
+        "sec sec"
+        ;
+       
+    }
+    img {
+        width: 150%;
+    }
+    .huis {
+        min-height: 1vh;
+    }
+
+    .security {
+        min-height: 1vh;
+        
+    }
+    img {
+        width: 150%;
+        margin-top: 40px;
+    }
+    #button {
+        margin-top: -20px;
+    }
 }
 
-.security {
-    width: 200px;
-    margin: 10px;
-    padding: 5px;
-    background-color: #360A6D;
-    color: white;
-    min-width: 40%;
-    padding-top: 40%;
+@media screen and (max-width: 600px) {
+    body{
     
-}
+        background-color: #8753BD;
+        font-size: 20px;
+        grid-column: 1fr 1fr;
+        grid-row: 1fr;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 60px;
+        margin: 40px;
+        
+        grid-template-areas: 
+        "huis"
+        "sec"
+        ;
+    }
+    .huis {
+        min-height: 1vh;
+    }
 
-.huis p {
-    padding-top: -500px;
+    .security {
+        min-height: 1vh;
+        
+    }
+    img {
+        width: 150%;
+        margin-top: -45px;
+    }
+    #button {
+        margin-top: -60px;
+    }
 }
