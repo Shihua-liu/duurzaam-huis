@@ -1,6 +1,5 @@
-@media screen and (min-width: 1279px){
+@media screen and (min-width: 1001px){
     body{
-        
         background-color: #8753BD;
         font-size: 20px;
         grid-column: 1fr 1fr;
@@ -22,7 +21,7 @@
 
 
     img{
-        width: 200%;
+        width: 700px;
         margin: 40px;
         height: 363px;
     }
@@ -62,7 +61,7 @@
     }
 } 
 
-@media screen and (max-width: 1278px) {
+@media screen and (max-width: 1000px) {
     body{
     
         background-color: #8753BD;
