@@ -9,8 +9,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-gap: 40px;
-        margin: 40px;
+        grid-gap: 85px;
+        margin: 85px;
         grid-template-areas: 
         "nav temp meting"
         "kost weer verbruik";
@@ -18,8 +18,8 @@
     .item{
         background-color: #360A6D;
         color: white;
-        
-        height: 400px;
+        width: 450px;
+        height: 450px;
     }
     .nav{
         grid-area: nav;
@@ -39,4 +39,124 @@
     .verbruik{
        grid-area: verbruik;
     }
+    button {
+        margin-top: 10px; 
+        padding: 30px; 
+        border-radius: 30px;
+        width: 186px;
+        height: 87px;
+        text-align: center;
+    }
+
+    
 } 
+
+@media screen and (max-width: 1000px) {
+    body{
+        background-color: #8753BD;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 40px;
+        margin: 10px;
+        grid-template-areas: 
+        "nav temp"
+        "meting kost"
+        "weer verbruik";
+    }
+    .item{
+        background-color: #360A6D;
+        color: white;
+        width: 350px;
+        height: 350px;
+    }
+    .nav{
+        grid-area: nav;
+    }
+    .temp{
+        grid-area: temp;
+    }
+    .meting{
+        grid-area: meting;
+    }
+    .kosten{
+        grid-area: kost;
+    }
+    .weer{
+        grid-area: weer;
+    }
+    .verbruik{
+       grid-area: verbruik;
+    }
+    button {
+        margin-top: 4px; 
+        padding: 15px; 
+        border-radius: 30px;
+        width: 120px;
+        height: 50px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    body{
+        background-color: #8753BD;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 25px;
+        grid-template-areas: 
+        "nav"
+        "temp"
+        "meting"
+        "kost"
+        "weer"
+        "verbruik";
+    }
+    .item{
+        background-color: #360A6D;
+        color: white;
+        width: 350px;
+        height: 350px;
+        
+    }
+    .nav{
+        grid-area: nav;
+    }
+    .temp{
+        grid-area: temp;
+    }
+    .meting{
+        grid-area: meting;
+    }
+    .kosten{
+        grid-area: kost;
+    }
+    .weer{
+        grid-area: weer;
+    }
+    .verbruik{
+       grid-area: verbruik;
+    }
+    button {
+        margin-top: 1px; 
+        padding: 15px; 
+        border-radius: 30px;
+        width: 120px;
+        height: 50px;
+        text-align: center;
+    }
+}

@@ -1,6 +1,61 @@
 @media screen and (min-width: 1001px){
     body{
         background-color: #8753BD;
+        width: fit-content;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 85px;
+        margin: 175px;
+        grid-template-areas: 
+        "nav temp meting"
+        "kost weer verbruik";
+    }
+    .item{
+        background-color: #360A6D;
+        color: white;
+        width: 450px;
+        height: 450px;
+    }
+    .nav{
+        grid-area: nav;
+    }
+    .temp{
+        grid-area: temp;
+    }
+    .meting{
+        grid-area: meting;
+    }
+    .kosten{
+        grid-area: kost;
+    }
+    .weer{
+        grid-area: weer;
+    }
+    .verbruik{
+       grid-area: verbruik;
+    }
+    button {
+        margin-top: 10px; 
+        padding: 30px; 
+        border-radius: 30px;
+        width: 186px;
+        height: 87px;
+        text-align: center;
+    }
+
+    
+} 
+
+
+@media screen and (min-width: 1001px){
+    body{
+        background-color: #8753BD;
         font-size: 20px;
         grid-column: 1fr 1fr;
         grid-row: 1fr;
