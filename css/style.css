@@ -19,8 +19,6 @@
     .item{
         background-color: #360A6D;
         color: white;
-        width: 450px;
-        height: 450px;
     }
     .nav{
         grid-area: nav;
