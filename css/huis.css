@@ -26,6 +26,12 @@
     }
     .temp{
         grid-area: temp;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        fill: #fff;
+        
     }
     .meting{
         grid-area: meting;
@@ -47,7 +53,22 @@
         height: 60px;
         text-align: center;
     }
-    
+
+    #eenheid{
+        font-size: .3rem;
+    } 
+    input{
+        color: vlue;
+    }
+    #thermo{
+        width: 150px;
+        padding: 30px;
+        font-size: .5rem;
+    }
+    svg{
+        padding: 10px;
+        font-size: .5rem;
+    }
 } 
 
 @media screen and (max-width: 1000px) {
@@ -79,6 +100,12 @@
     }
     .temp{
         grid-area: temp;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        fill: #fff;
+        
     }
     .meting{
         grid-area: meting;
@@ -99,6 +126,21 @@
         width: 120px;
         height: 50px;
         text-align: center;
+    }
+
+    #eenheid{
+        font-size: .3rem;
+    } 
+    input{
+        color: vlue;
+    }
+    #thermo{
+        width: 150px;
+        padding: 20px;
+        font-size: .5rem;
+    }
+    svg{
+        font-size: .5rem;
     }
 }
 
@@ -137,6 +179,11 @@
     }
     .temp{
         grid-area: temp;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        fill: #fff;
     }
     .meting{
         grid-area: meting;
@@ -157,5 +204,20 @@
         width: 120px;
         height: 50px;
         text-align: center;
+    }
+
+    #eenheid{
+        font-size: .3rem;
+    } 
+    input{
+        color: vlue;
+    }
+    #thermo{
+        width: 140px;
+        padding: 20px;
+        font-size: .5rem;
+    }
+    svg{
+        font-size: .5rem;
     }
 }

@@ -18,9 +18,58 @@
             <h4>hier bent u nu:</h4>
             <button><a href="huis.html">metingen</a></button>
         </div>
-        <div class="item temp">temp</div>
+        <div class="item temp">
+
+            <h1>tempetaruur</h1>
+            <svg width="50%" height="50%" viewBox="0 0 42 42">
+                <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="rgba(200,200,200,0.5)" stroke-width="1"></circle>  
+                <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="royalblue" stroke-width="1" stroke-dasharray="75 25" stroke-dashoffset="75" id="rond"></circle>  
+                <g class="temp">
+                    <text id="temperatuur" x="30%" y="55%">19</text>
+                    <text id="eenheid" x="54%" y="50%">&deg;C</text>
+                </g>
+            </svg>
+            <input type="range" min="1" max="30" step="1" value="18" id=thermo>
+            <script>
+                        let temperatuur = 9;
+                        const tempuit = document.getElementById("temperatuur");
+                        const cirkelBoog = document.getElementById("rond");
+                        const thermos = document.getElementById("thermo");
+                
+                        
+                
+                        // temperatuur = thermos.value;
+                        
+                        const uitvoeren = (temp) =>{
+                            tempuit.innerHTML = temp;
+                            let boog = temp * 100/31;
+                            cirkelBoog.style.strokeDasharray = `${boog} ${100 - boog}`;
+                        }
+                
+                        const animeeruitvoer = (temp) =>{
+                            let t = 0;
+                            const timer = setInterval( () =>{
+                                if (t <= temp) {
+                                    uitvoeren(t);
+                                    t++;
+                                } else {
+                                    clearInterval(timer);
+                                }
+                                
+                            }, 25)
+                            
+                        }
+                        animeeruitvoer(thermos.value);
+                
+                        thermos.addEventListener("change", () =>{
+                            animeeruitvoer(thermos.value);
+                        });
+            </script>
+        </div>
         <div class="item meting">metingen</div>
-        <div class="item kosten">kosten</div>
+        <div class="item kosten">
+            <h1>kosten</h1> 
+        </div>
         <div class="item weer">weer</div>
         <div class="item verbruik">verbruik</div>
     </div>
