@@ -30,48 +30,21 @@
                 </g>
             </svg>
             <input type="range" min="1" max="30" step="1" value="18" id=thermo>
-            <script>
-                        let temperatuur = 9;
-                        const tempuit = document.getElementById("temperatuur");
-                        const cirkelBoog = document.getElementById("rond");
-                        const thermos = document.getElementById("thermo");
-                
-                        
-                
-                        // temperatuur = thermos.value;
-                        
-                        const uitvoeren = (temp) =>{
-                            tempuit.innerHTML = temp;
-                            let boog = temp * 100/31;
-                            cirkelBoog.style.strokeDasharray = `${boog} ${100 - boog}`;
-                        }
-                
-                        const animeeruitvoer = (temp) =>{
-                            let t = 0;
-                            const timer = setInterval( () =>{
-                                if (t <= temp) {
-                                    uitvoeren(t);
-                                    t++;
-                                } else {
-                                    clearInterval(timer);
-                                }
-                                
-                            }, 25)
-                            
-                        }
-                        animeeruitvoer(thermos.value);
-                
-                        thermos.addEventListener("change", () =>{
-                            animeeruitvoer(thermos.value);
-                        });
-            </script>
         </div>
         <div class="item meting">metingen</div>
         <div class="item kosten">
             <h1>kosten</h1> 
+            <div id="kosten">
+                <h5>elektriciteit verbruikt in KwH</h5><input type="text" id="elek"><br>
+                <h5>water verbruikt in M3</h5><input type="text" id="water"><br>
+                <h5>gas verbruikt in M3</h5><input type="text" is="gas"><br>
+                <button id="submit">submit</button>
+            </div>
         </div>
         <div class="item weer">weer</div>
         <div class="item verbruik">verbruik</div>
     </div>
+    <script src="../js/temp.js"></script>
+    <script src="../js/kosten.js"></script>
 </body>
 </html>

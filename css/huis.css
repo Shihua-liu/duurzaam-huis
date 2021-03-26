@@ -3,6 +3,10 @@
         background-color: #8753BD;
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
+
+    }
+
+    body h1{
         text-align: center;
     }
     .main{
@@ -20,30 +24,34 @@
         color: white;
         width: 450px;
         height: 450px;
+        
     }
     .nav{
         grid-area: nav;
+        text-align: center;
     }
     .temp{
         grid-area: temp;
         display: flex;
         align-items: center;
         flex-direction: column;
-        
         fill: #fff;
-        
     }
     .meting{
         grid-area: meting;
+        text-align: center;
     }
     .kosten{
         grid-area: kost;
+        text-align: center;
     }
     .weer{
         grid-area: weer;
+        text-align: center;
     }
     .verbruik{
        grid-area: verbruik;
+       text-align: center;
     }
     button {
         margin: 15px; 
@@ -68,6 +76,12 @@
     svg{
         padding: 10px;
         font-size: .5rem;
+    }
+    .item h1{
+        text-align: center;
+    }
+    .kosten input{
+        width: 100px;
     }
 } 
 
