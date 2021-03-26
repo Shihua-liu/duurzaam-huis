@@ -41,6 +41,7 @@ button.addEventListener("click", () => {
 button_r.addEventListener("click", () => {
     document.getElementById("kosten2").style.display = "block"; 
     document.getElementById("reset").style.display = "none"; 
+    document.getElementById("kost").style.display = "none"; 
 })
 
 // MAAK een nieuw request object aan
