@@ -36,6 +36,7 @@ button.addEventListener("click", () => {
     let kost_rond = kost_totaal.toFixed(2);
     document.getElementById("kost").innerHTML = "kosten is momenteel <br>" + kost_rond + " euro"; 
     document.getElementById("reset").style.display = "block"; 
+    document.getElementById("kost").style.display = "block"; 
 })
 
 button_r.addEventListener("click", () => {
