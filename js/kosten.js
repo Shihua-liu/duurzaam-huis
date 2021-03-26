@@ -23,7 +23,7 @@ button.addEventListener("click", () => {
     let gas_stand = parseInt(gas.value)
     let gas_totaal = gas_stand - gas_laatste
     console.log(gas_totaal)
-    document.getElementById("kosten").style.display = "none"; 
+    document.getElementById("kosten2").style.display = "none"; 
 
     elek_kost = 100 / 22 * elek_totaal;
             
@@ -39,7 +39,7 @@ button.addEventListener("click", () => {
 })
 
 button_r.addEventListener("click", () => {
-    document.getElementById("kosten").style.display = "block"; 
+    document.getElementById("kosten2").style.display = "block"; 
     document.getElementById("reset").style.display = "none"; 
 })
 
