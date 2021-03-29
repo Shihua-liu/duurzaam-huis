@@ -4,6 +4,10 @@
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         text-align: center;
+        background: linear-gradient(
+            to right top,
+            #721b81,
+            #8d4880);
     }
 
     .main {
@@ -61,6 +65,10 @@
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         text-align: center;
+        background: linear-gradient(
+            to right top,
+            #721b81,
+            #8d4880);
     }
 
     .main {
@@ -121,6 +129,10 @@
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         text-align: center;
+        background: linear-gradient(
+            to right top,
+            #721b81,
+            #8d4880);
     }
 
     .main {
