@@ -5,7 +5,6 @@ var maximaal;
 
 
 
-
 // OPEN en verstuur
 xmlhttp.open("GET", "http://localhost/BO3/weer/standen2json.php", true);
 xmlhttp.send();
