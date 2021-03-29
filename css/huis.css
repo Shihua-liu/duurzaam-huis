@@ -5,8 +5,8 @@
         font-family: 'Open Sans', sans-serif;
         background: linear-gradient(
             to right top,
-            #901EA3,
-            #D2A5CA);
+            #721b81,
+            #8d4880);
     }
 
     body h1{
@@ -21,13 +21,14 @@
         grid-template-areas: 
         "nav temp meting"
         "kost weer verbruik";
+        
     }
     .item{
         background-color: #360A6D;
         color: white;
         width: 450px;
         height: 450px;
-        
+        border-radius: 10%;
     }
     .nav{
         grid-area: nav;
@@ -94,6 +95,13 @@
     }
     #kosten2{
         padding-left: 40px;
+        
+    }
+    #reset{
+        padding-bottom: 40px;
+    }
+    #kost {
+        padding-left: 40px;
     }
 } 
 
@@ -103,6 +111,10 @@
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         text-align: center;
+        background: linear-gradient(
+            to right top,
+            #721b81,
+            #8d4880);
     }
     .main{
         display: grid;
@@ -181,6 +193,12 @@
         padding-left: 40px;
         
     }
+    #reset{
+        padding-bottom: 40px;
+    }
+    #kost {
+        padding-left: 40px;
+    }
 
 }
 
@@ -191,6 +209,10 @@
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         text-align: center;
+        background: linear-gradient(
+            to right top,
+            #721b81,
+            #8d4880);
         
     }
     .main{
@@ -264,6 +286,11 @@
     .kosten input{
         width: 100px;
     }
-
+    #reset{
+        padding-bottom: 40px;
+    }
+    #kost {
+        padding-left: 40px;
+    }
 
 }
