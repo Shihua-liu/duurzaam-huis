@@ -3,7 +3,10 @@
         background-color: #8753BD;
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
-
+        background: linear-gradient(
+            to right top,
+            #901EA3,
+            #D2A5CA);
     }
 
     body h1{
