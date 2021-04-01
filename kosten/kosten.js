@@ -32,8 +32,11 @@ button.addEventListener("click", () => {
     gas_kost = 100 / 76 * gas_totaal;
             
     kost_totaal = elek_kost + water_kost + gas_kost
+
     console.log(kost_totaal)
+
     let kost_rond = kost_totaal.toFixed(2);
+    
     document.getElementById("kost").innerHTML = "kosten is momenteel <br>" + kost_rond + " euro"; 
     document.getElementById("reset").style.display = "block"; 
     document.getElementById("kost").style.display = "block"; 
@@ -83,5 +86,4 @@ function displayResultaat(stand) {
 
         }
 }
-
 
