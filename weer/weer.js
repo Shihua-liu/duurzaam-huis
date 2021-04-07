@@ -44,8 +44,12 @@ function displayResultaat2(stand) {
         }
         if (show == 6){
             show = 0
+<<<<<<< HEAD
             let tekst3 = "volgende dag";
         document.getElementById("weertekst").innerHTML = tekst3 
+=======
+            
+>>>>>>> 5e0db23a464cda53ac66db1b2b72dfc3329fc49b
         }
         let tekst = '';
         tekst = tekst +
