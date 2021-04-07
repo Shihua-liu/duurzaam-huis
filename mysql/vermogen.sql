@@ -34,7 +34,11 @@ USE vermogen;
 CREATE TABLE `standen` (
   `id` int(11) NOT NULL,
   `apparaat` varchar(20) NOT NULL,
+<<<<<<< HEAD
   `stand` DECIMAL(11,2) NOT NULL
+=======
+  `stand` int(11) NOT NULL
+>>>>>>> 0d199971b1f103fc59618242142346ec8eda88c8
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -56,7 +60,10 @@ ALTER TABLE `standen`
 --
 ALTER TABLE `standen`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 0d199971b1f103fc59618242142346ec8eda88c8
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
