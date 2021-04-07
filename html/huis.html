@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Home</title>
     <link rel="stylesheet" href="../css/huis.css">
+    <link rel="shortcut icon" href="#">
 </head>
 <body>
     <h1>Metingen</h1>
@@ -52,15 +53,24 @@
         </div>
         <div class="item weer">
             <h1>weer</h1>
-            <div>
-                <p id="weer"></p>
+            <div class="weerL">
+                <p id="weer"></p><button id="weerknop"><section id="weertekst">volgende dag</section> </button>
             </div>
         </div>
-        <div class="item verbruik">verbruik</div>
+        <div class="item verbruik">
+            <h1>vermogen</h1>
+            <div id="vermogen2">
+                <div id="apparaat"><p id="vermogen"></p></div>
+                <div id="verbruik2"><p id="standen2"></p></div>
+                
+            </div>
+        
+        </div>
     </div>
+
     <script src="../kosten/kosten.js"></script>
-    <script src="../js/kosten.js"></script>
-    <script src="../js/weer.js"></script>
+    <script src="../weer/weer.js"></script>
     <script src="../temp/temp.js"></script>
+    <script src="../vermogen/vermogen.js"></script>
 </body>
 </html>
