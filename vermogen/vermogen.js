@@ -22,6 +22,10 @@ xmlhttp3.send();
 
 // MAAK het resultaat op basis van de teruggezonden gegevens
 function displayResultaat3(stand) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 430ba5e0fe850dc416787ca7e9b624033ffb4a73
     let tekst = '';
     let tekst2 = '';
 
@@ -43,4 +47,10 @@ function displayResultaat3(stand) {
             '<br>';
         document.getElementById("standen2").innerHTML = tekst2;
     }
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> 0d199971b1f103fc59618242142346ec8eda88c8
+>>>>>>> 430ba5e0fe850dc416787ca7e9b624033ffb4a73
 }

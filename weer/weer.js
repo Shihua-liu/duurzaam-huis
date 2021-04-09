@@ -44,8 +44,22 @@ function displayResultaat2(stand) {
         }
         if (show == 6){
             show = 0
+<<<<<<< HEAD
             let tekst3 = "volgende dag";
         document.getElementById("weertekst").innerHTML = tekst3 
+=======
+<<<<<<< HEAD
+            let tekst3 = "volgende dag";
+        document.getElementById("weertekst").innerHTML = tekst3 
+=======
+<<<<<<< HEAD
+            let tekst3 = "volgende dag";
+        document.getElementById("weertekst").innerHTML = tekst3 
+=======
+            
+>>>>>>> 5e0db23a464cda53ac66db1b2b72dfc3329fc49b
+>>>>>>> 0d199971b1f103fc59618242142346ec8eda88c8
+>>>>>>> 430ba5e0fe850dc416787ca7e9b624033ffb4a73
         }
         let tekst = '';
         tekst = tekst +
