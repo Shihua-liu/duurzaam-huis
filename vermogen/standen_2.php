@@ -1,22 +1,12 @@
 <?php
 
 // Zet de toegangsgegevens tot de database in variabelen
-<<<<<<< HEAD
-$server     = '127.0.0.1';
-$database   = 'c5957standen';
-$table      = 'standen';
-$name       = 'c5957shihua';
-$pwd        = 'root';
-
-
-=======
 $server     = 'localhost';
-$database   = 'standen';
+$database   = 'vermogen';
 $table      = 'standen';
 $name       = 'root';
 $pwd        = 'root';
 
->>>>>>> 707f1cec545e68b25acb0ecdc839beb79b058b06
 // MAAK een lege array aan, in deze array komen later de resultaten te staan.
 $stand = array();
 
@@ -29,7 +19,7 @@ if (mysqli_connect_errno()) {
 }
 
 // ZET de query klaar in een variabele
-$sql = "SELECT id, meter, standen FROM standen";
+$sql = "SELECT id, apparaat, stand FROM stand";
 
 // VOER de query uit met de gelegde verbinding en de query variabele
 $result = mysqli_query($connect, $sql);

@@ -15,7 +15,11 @@ xmlhttp4.onreadystatechange = function() {
 
 
 // OPEN en verstuur
+<<<<<<< HEAD
 xmlhttp4.open("GET", "http://31684.hosts1.ma-cloud.nl/BO3/standen/standen2json4.php", true);
+=======
+xmlhttp4.open("GET", "http://localhost/BO3/standen/standen2json.php", true);
+>>>>>>> 707f1cec545e68b25acb0ecdc839beb79b058b06
 xmlhttp4.send();
 
 // MAAK het resultaat op basis van de teruggezonden gegevens

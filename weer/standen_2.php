@@ -1,6 +1,7 @@
 <?php
 
 // Zet de toegangsgegevens tot de database in variabelen
+<<<<<<< HEAD
 $server     = '127.0.0.1';
 $database   = 'c5957weer';
 $table      = 'stand';
@@ -8,6 +9,14 @@ $name       = 'c5957shihua';
 $pwd        = 'root';
 
 
+=======
+$server     = 'localhost';
+$database   = 'weer';
+$table      = 'stand';
+$name       = 'root';
+$pwd        = 'root';
+
+>>>>>>> 707f1cec545e68b25acb0ecdc839beb79b058b06
 // MAAK een lege array aan, in deze array komen later de resultaten te staan.
 $stand = array();
 

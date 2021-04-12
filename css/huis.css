@@ -54,6 +54,12 @@
        grid-template-columns: 1fr 1fr 1fr; 
        
     }
+<<<<<<< HEAD
+=======
+    #metingen2, p{
+        margin-top: 40px;
+    }
+>>>>>>> 707f1cec545e68b25acb0ecdc839beb79b058b06
 
     .kosten{
         grid-area: kost;
