@@ -4,6 +4,10 @@
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         text-align: center;
+        background: linear-gradient(
+            to right top,
+            #721b81,
+            #8d4880);
     }
 
     .main {
@@ -15,12 +19,14 @@
         grid-template-areas: 
         "nav alarm camera camera"
         "lamp lamp deur deur";
+        border-radius: 10%;
     }
 
     .item{
         background-color: #360A6D;
         color: white;
         height: 450px;
+        border-radius: 15%;
     }
 
     .menu{
@@ -61,6 +67,10 @@
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         text-align: center;
+        background: linear-gradient(
+            to right top,
+            #721b81,
+            #8d4880);
     }
 
     .main {
@@ -81,6 +91,7 @@
         background-color: #360A6D;
         color: white;
         height: 450px;
+        border-radius: 10%
     }
 
     .menu{
@@ -121,6 +132,10 @@
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         text-align: center;
+        background: linear-gradient(
+            to right top,
+            #721b81,
+            #8d4880);
     }
 
     .main {
@@ -141,6 +156,7 @@
         background-color: #360A6D;
         color: white;
         height: 450px;
+        border-radius: 10%;
     }
 
     .menu{

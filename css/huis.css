@@ -1,3 +1,6 @@
+
+
+
 @media screen and (min-width: 1001px){
     body{
         background-color: #8753BD;
@@ -44,7 +47,14 @@
     .meting{
         grid-area: meting;
         text-align: center;
+        
     }
+    #metingdiv{
+        display: grid;
+       grid-template-columns: 1fr 1fr 1fr; 
+       
+    }
+
     .kosten{
         grid-area: kost;
     }
@@ -63,6 +73,11 @@
         width: 150px;
         height: 60px;
         text-align: center;
+    }
+
+    #vermogen2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     #eenheid{
@@ -89,7 +104,8 @@
 
     .kosten button{
         display: block;
-        margin-bottom: 40px;
+        margin-right: 25px;
+        margin-top: -12px;
         margin-left: auto;
         
     }
@@ -132,6 +148,7 @@
         color: white;
         width: 450px;
         height: 450px;
+        border-radius: 10%;
     }
     .nav{
         grid-area: nav;
@@ -147,6 +164,10 @@
     }
     .meting{
         grid-area: meting;
+    }
+    #metingdiv{
+        display: grid;
+       grid-template-columns: 1fr 1fr 1fr; 
     }
     .kosten{
         grid-area: kost;
@@ -167,6 +188,11 @@
         text-align: center;
     }
 
+    #vermogen2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     #eenheid{
         font-size: .3rem;
     } 
@@ -185,11 +211,14 @@
         width: 100px;
     }
 
-    #kosten2{
+    .kosten button{
         display: block;
-        margin-bottom: 40px;
+        margin-right: 25px;
+        margin-top: -12px;
         margin-left: auto;
         
+    }
+    #kosten2{
         padding-left: 40px;
         
     }
@@ -234,7 +263,7 @@
         color: white;
         width: 450px;
         height: 450px;
-        
+        border-radius: 10%;
     }
     .nav{
         grid-area: nav;
@@ -250,6 +279,10 @@
     .meting{
         grid-area: meting;
     }
+    #metingdiv{
+        display: grid;
+       grid-template-columns: 1fr 1fr 1fr; 
+    }
     .kosten{
         grid-area: kost;
 
@@ -259,7 +292,15 @@
     }
     .verbruik{
        grid-area: verbruik;
+
+
     }
+
+    #vermogen2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     button {
         margin-top: 1px; 
         padding: 15px; 
@@ -285,6 +326,18 @@
     }
     .kosten input{
         width: 100px;
+    }
+
+    .kosten button{
+        display: block;
+        margin-right: 25px;
+        margin-top: -12px;
+        margin-left: auto;
+        
+    }
+    #kosten2{
+        padding-left: 40px;
+        
     }
     #reset{
         padding-bottom: 40px;

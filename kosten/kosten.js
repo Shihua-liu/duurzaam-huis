@@ -32,8 +32,11 @@ button.addEventListener("click", () => {
     gas_kost = 100 / 76 * gas_totaal;
             
     kost_totaal = elek_kost + water_kost + gas_kost
+
     console.log(kost_totaal)
+
     let kost_rond = kost_totaal.toFixed(2);
+    
     document.getElementById("kost").innerHTML = "kosten is momenteel <br>" + kost_rond + " euro"; 
     document.getElementById("reset").style.display = "block"; 
     document.getElementById("kost").style.display = "block"; 
@@ -61,7 +64,7 @@ xmlhttp.onreadystatechange = function() {
 };
 
 // OPEN en verstuur
-xmlhttp.open("GET", "http://localhost/BO3/kosten/standen2json.php", true);
+xmlhttp.open("GET", "http://31684.hosts1.ma-cloud.nl/BO3/kosten/standen2json.php", true);
 xmlhttp.send();
 
 // MAAK het resultaat op basis van de teruggezonden gegevens
@@ -83,5 +86,4 @@ function displayResultaat(stand) {
 
         }
 }
-
 

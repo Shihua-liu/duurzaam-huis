@@ -2,7 +2,7 @@
 
 // Zet de toegangsgegevens tot de database in variabelen
 $server     = '127.0.0.1';
-$database   = 'c5957energie';
+$database   = 'c5957standen';
 $table      = 'standen';
 $name       = 'c5957shihua';
 $pwd        = 'root';
@@ -20,7 +20,7 @@ if (mysqli_connect_errno()) {
 }
 
 // ZET de query klaar in een variabele
-$sql = "SELECT id, datum, item, stand FROM standen";
+$sql = "SELECT id, meter, standen FROM standen";
 
 // VOER de query uit met de gelegde verbinding en de query variabele
 $result = mysqli_query($connect, $sql);
