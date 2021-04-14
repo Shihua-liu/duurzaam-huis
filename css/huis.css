@@ -46,7 +46,7 @@
     }
     .meting{
         grid-area: meting;
-        text-align: center;
+        
         
     }
     #metingdiv{
@@ -75,9 +75,13 @@
         text-align: center;
     }
 
+    #vermogen2 p{
+        margin: 40px;
+    }
     #vermogen2{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: center;
+        text-align: left;
     }
 
     #eenheid{
@@ -188,9 +192,13 @@
         text-align: center;
     }
 
+    #vermogen2 p{
+        margin: 40px;
+    }
     #vermogen2{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: center;
+        text-align: left;
     }
 
     #eenheid{
@@ -296,9 +304,13 @@
 
     }
 
+    #vermogen2 p{
+        margin: 40px;
+    }
     #vermogen2{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: center;
+        text-align: left;
     }
 
     button {
